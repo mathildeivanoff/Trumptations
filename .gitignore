@@ -33,11 +33,8 @@ wp-content/backup-db/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
-index.php
 wp-activate.php
 wp-admin/
 wp-blog-header.php
