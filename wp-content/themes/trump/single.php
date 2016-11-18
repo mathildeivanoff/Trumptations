@@ -21,7 +21,7 @@
                     <h1><?php the_title(); ?></h1>
                     <p><?php the_content(); ?></p>
                 </div>
-                
+
                 <!-- Load Facebook SDK for JavaScript -->
                 <div id="fb-root"></div>
                 <script>(function(d, s, id) {
@@ -51,7 +51,7 @@
 
 
 <div id="retour">
-    <a href="<?php echo get_post_type_archive_link( 'projets' ); ?>" class="center" >voir tous les projets</a>
+    <a href="<?php echo get_home_url(); ?>" class="center" >voir tous les projets</a>
 </div>
 
 <?php get_footer();
