@@ -50,7 +50,7 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
-
+index.php
 
 /.htaccess
 /license.txt
