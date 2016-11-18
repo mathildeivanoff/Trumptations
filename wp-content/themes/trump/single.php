@@ -17,11 +17,33 @@
                 <meta property="og:description"   content="<?php the_title(); ?>" />
                 <meta property="og:image"         content="/wp-content/uploads/2016/11/0620trumppolicies01.png" />
 
-                <div id="main" role="main" class="mod pam">
-                    <h2><?php the_title(); ?></h2>
+                <div id="quote">
+                    <h1><?php the_title(); ?></h1>
+                    <p><?php the_content(); ?></p>
                 </div>
-                <div class="mod" >
-                        <?php the_content(); ?>
+                
+                <!-- Load Facebook SDK for JavaScript -->
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+
+                <div class="share-buttons">
+                    <div class="fb-share-button" data-href="<?php the_permalink() ?>" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+                        <a class="fb-xfbml-parse-ignore" target="_blank" href="">
+                           Facebook
+                        </a>
+                    </div>
+
+                    <a class="twitter-share-button"
+                      data-size="large">
+                         Tweeter
+                    </a>
                 </div>
 
             <?php endwhile; ?>

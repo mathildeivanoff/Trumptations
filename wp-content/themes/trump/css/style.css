@@ -19,6 +19,20 @@ ul li {
     color: white;
 }
 
+#quote {
+    padding-top: 40vh!important;
+    width: 80%;
+    left: 0; right: 0;
+    margin: auto;
+}
+
+h1 {
+   font-size: 50px;
+    color: white;
+    margin: 0;
+    font-weight:normal;
+}
+
 .unslider {
     padding-top: 40vh!important;
 }
