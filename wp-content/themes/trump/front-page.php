@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    
+
     <?php
 
 $querystr = "
@@ -15,7 +15,7 @@ $querystr = "
 $pageposts = $wpdb->get_results($querystr, OBJECT);
 
 ?>
-    
+
     <div class="banner">
         <ul id="quotes">
          <?php if ($pageposts): ?>
@@ -27,7 +27,7 @@ $pageposts = $wpdb->get_results($querystr, OBJECT);
         </ul>
     </div>
 
-    
+
     <!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -38,7 +38,7 @@ $pageposts = $wpdb->get_results($querystr, OBJECT);
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
-	
+
 	<div class="share-buttons">
         <div class="fb-share-button" data-href="http://127.0.0.1/projects/Trumpatations/wordpress/?p=19" data-layout="button_count" data-size="small" data-mobile-iframe="true">
             <a class="fb-xfbml-parse-ignore" target="_blank" href="">
@@ -51,5 +51,7 @@ $pageposts = $wpdb->get_results($querystr, OBJECT);
              Tweeter
         </a>
     </div>
-	
+
+    <a class="bouton" href="/Trumptations/wordpress/?page_id=55">Ajouter votre quote!</a>
+  
 <?php get_footer(); ?>

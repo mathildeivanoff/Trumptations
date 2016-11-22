@@ -8,5 +8,4 @@
     <script src="<?php bloginfo('template_directory');?>/js/unslider-master/dist/js/unslider-min.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/js/unslider-master/dist/css/unslider.css">
 </head>
-  </script>
 <body>
