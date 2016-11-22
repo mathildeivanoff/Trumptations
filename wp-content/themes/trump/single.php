@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    
     <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
@@ -9,13 +9,13 @@
                 <meta property="og:url" content="<?php the_permalink() ?>" />
                 <meta property="og:title" content="Trump said it..." />
                 <meta property="og:description" content="<?php the_title(); ?>" />
-                <meta property="og:image" content="/wp-content/uploads/2016/11/0620trumppolicies01.png" />
-
+                <meta property="og:image" content="http://127.0.0.1/projects/Trumpatations/wordpress/wp-content/uploads/2016/11/0620trumppolicies01.png" />
+                
                 <meta property="og:url"           content="<?php the_permalink() ?>" />
                 <meta property="og:type"          content="website" />
                 <meta property="og:title"         content="Trump said it..." />
                 <meta property="og:description"   content="<?php the_title(); ?>" />
-                <meta property="og:image"         content="/wp-content/uploads/2016/11/0620trumppolicies01.png" />
+                <meta property="og:image"         content="http://127.0.0.1/projects/Trumpatations/wordpress/wp-content/uploads/2016/11/0620trumppolicies01.png" />
 
                 <div id="quote">
                     <h1><?php the_title(); ?></h1>
@@ -40,18 +40,18 @@
                         </a>
                     </div>
 
-                    <a class="twitter-share-button"
-                      data-size="large">
+                    <a class="twitter-share-button" onclick= "window.open('https://twitter.com/intent/tweet?text=<?php the_permalink() ?>', 'newwindow', 'width=600, height=500'); return false;" data-size="large">
                          Tweeter
                     </a>
-                </div>
+                </div>  
 
             <?php endwhile; ?>
     <?php endif; ?>
 
 
 <div id="retour">
-    <a href="<?php echo get_post_type_archive_link( 'projets' ); ?>" class="center" >voir tous les projets</a>
+    <a href="<?php echo home_url(); ?>" class="center" >Retour</a>
 </div>
 
 <?php get_footer();
+		

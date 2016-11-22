@@ -21,7 +21,7 @@ $pageposts = $wpdb->get_results($querystr, OBJECT);
          <?php if ($pageposts): ?>
             <?php global $post; ?>
                  <?php foreach ($pageposts as $post): ?>
-                     <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+                     <li class="quotes"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
                  <?php endforeach; ?>
          <?php endif; ?>
         </ul>
@@ -51,5 +51,9 @@ $pageposts = $wpdb->get_results($querystr, OBJECT);
              Tweeter
         </a>
     </div>
+    
+    <button id="random">Random</button>
+    
+    <a class="bouton" href="http://127.0.0.1/projects/Trumpatations/wordpress/?page_id=23">Ajouter votre quote!</a>
 	
 <?php get_footer(); ?>
